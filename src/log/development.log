@@ -1,0 +1,110 @@
+Started GET "/" for 159.91.171.189 at 2020-02-24 17:54:17 -0500
+Cannot render console from 159.91.171.189! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /local/home/sysadmin/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /local/home/sysadmin/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.2ms | Allocations: 294)
+Completed 200 OK in 16ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 1662)
+
+
+Started GET "/" for 159.91.171.189 at 2020-02-24 18:01:59 -0500
+Cannot render console from 159.91.171.189! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 187)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /local/home/sysadmin/webapp/MusicApp/public/packs
+[Webpacker] Hash: 32e57f147dbdcbbf0c82
+Version: webpack 4.41.6
+Time: 1973ms
+Built at: 2020-02-24 18:02:02
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bbe9c4a129ab949e0636.js    124 KiB  application  [emitted] [immutable]  application
+js/application-bbe9c4a129ab949e0636.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-bbe9c4a129ab949e0636.js js/application-bbe9c4a129ab949e0636.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3712ms (Views: 3704.4ms | ActiveRecord: 0.0ms | Allocations: 19053)
+
+
+Started GET "/" for 159.91.171.189 at 2020-02-24 18:14:00 -0500
+Cannot render console from 159.91.171.189! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.5ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 7463)
+
+
+Started GET "/" for 159.91.171.189 at 2020-02-24 18:16:14 -0500
+Cannot render console from 159.91.171.189! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 210)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 7483)
+
+
+Started GET "/" for 159.91.171.189 at 2020-02-24 18:19:14 -0500
+Cannot render console from 159.91.171.189! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 8.3ms | Allocations: 4124)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 6031)
+
+
+Started GET "/" for 159.91.171.189 at 2020-02-24 18:19:25 -0500
+Cannot render console from 159.91.171.189! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 3.7ms | Allocations: 994)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1433)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Welcome to Musical Students Group!</h1>
+<%= 'this is just a test homepage, formatting and functionality will be added later.' %>
+<!-- will be implemented for creating an account-->
+<% def createAccount() %>
+
+):
+1:    <h1>Welcome to Musical Students Group!</h1>
+2:    <%= 'this is just a test homepage, formatting and functionality will be added later.' %>
+3:    <!-- will be implemented for creating an account-->
+4:    <% def createAccount() %>
+  
+app/views/pages/home.html.erb:6: syntax error, unexpected end-of-input, expecting `end'
+app/views/pages/home.html.erb:6: syntax error, unexpected end-of-input, expecting `end'
+app/views/pages/home.html.erb:6: syntax error, unexpected end-of-input, expecting `end'
+app/views/pages/home.html.erb:6: syntax error, unexpected end-of-input, expecting `end'
+app/views/pages/home.html.erb:6: syntax error, unexpected end-of-input, expecting `end'
+app/views/pages/home.html.erb:6: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 159.91.171.189 at 2020-02-24 18:22:45 -0500
+Cannot render console from 159.91.171.189! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 224)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 7499)
+
+
+Started GET "/" for 159.91.171.189 at 2020-02-24 18:35:21 -0500
+Cannot render console from 159.91.171.189! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 224)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 7501)
+
+
