@@ -6,4 +6,4 @@ The intent with all of these functions is to make sure that students in school d
 All code for the Ruby on Rails application is included in the src folder. Project proposal is in the docs folder and will include future documents that I create.
 
 AS OF 2-24:
-Stubs for the program can be found in MusicApp/app/views/pages in the files home.html.erb, lessons.html.erb, instruments.html.erb, and formaGroup.html.erb. This is the temporary location for these stubs, I have included them here so I can recognize which method is going to go on what page when I am focusing on implementation at a later date. The homepage is also incomplete, it just has some sample text.
+Stubs for the program can be found in src/app/views/pages in the files home.html.erb, lessons.html.erb, instruments.html.erb, and formaGroup.html.erb. This is the temporary location for these stubs, I have included them here so I can recognize which method is going to go on what page when I am focusing on implementation at a later date. The homepage is also incomplete, it just has some sample text.
