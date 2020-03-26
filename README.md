@@ -9,6 +9,9 @@ All code that I could add for the Ruby on Rails application is included in the s
 
 Began working on prototype for this submission on 3-26 as described in the issues tab. Working on functionality for one use case for this submission and will continue to develop them for the assignment 5 deadline.
 
+Assignment 3 UML Diagrams:
+![github-large](https://imgur.com/a/vXXDFYu)
+
 Use Case Descriptions:
 
 Use Case - Create of edit donation listing
