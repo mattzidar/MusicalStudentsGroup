@@ -11,7 +11,7 @@ Began working on prototype for this submission on 3-26 as described in the issue
 
 Assignment 3 UML Diagrams:
 https://imgur.com/a/vXXDFYu
-This link is private and can only be accessed with people who have this link.
+This link is private and can only be accessed by people who have this link. Includes: UI Mockups, System Sequence Diagrams, Design Class Diagram, State Diagram.
 
 Use Case Descriptions:
 
