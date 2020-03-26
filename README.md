@@ -1,4 +1,6 @@
 # MusicalStudentsGroup
+Note: Wiki requires that the repository be public or I upgrade and pay money, so I am putting my Wiki page here.
+
 Application for students in underprivileged music programs to receive instruments, get lessons, or form a music group such as a band, orchestra, or choir
 
 The intent with all of these functions is to make sure that students in school districts with a limited number of instruments can play an instrument on a regular basis. Additionally, lessons can serve as additional teaching for younger students, which will overall strengthen the performance of the program as a whole while providing older students with an opportunity to volunteer and give back. Students will be able to form musical groups based on their interests to expand their musical horizons by playing in groups that aren't offered in underfunded school districts such as a jazz combo or string quintet. This will also help them learn multiple styles of music.
@@ -164,4 +166,3 @@ Exceptions -
 Search that the student does does not return any results - the system prompts the user to enter different criteria for a different search.
 
 
-Note: Wiki requires that the repository be public or I upgrade and pay money, so I am putting my Wiki page here.
