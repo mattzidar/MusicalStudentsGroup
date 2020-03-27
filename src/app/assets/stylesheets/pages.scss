@@ -1,3 +1,45 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.navigation {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation p {
+  font-size: 20px;
+  padding-top: 20x;
+}
+
+body {
+  font-family: calibri;
+  background-color: #0C84C6;
+  color: #333;
+  margin: 25px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table, th {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table {
+  margin:1em auto;
+  width: 75%
+}
+
+th {
+  text-align: center;
+}
+
+p {
+    text-align: center;
+    
+}
