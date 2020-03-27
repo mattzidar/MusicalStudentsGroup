@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MusicApp</title>
+    <title>MusicalStudentsGroup</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,12 @@
   </head>
 
   <body>
+    <div class="navigation">
+      <p><%= link_to 'Home', pages_home_path %></p>
+      <p><%= link_to 'Donations', pages_instruments_path %></p>
+      <p><%= link_to 'Lessons', pages_lessons_path %></p>
+      <p><%= link_to 'Student Groups', pages_formaGroup_path %></p>
+    </div>
     <%= yield %>
   </body>
 </html>
