@@ -1,0 +1,45 @@
+<%# Project name: MusicalStudentsGroup
+ Description: Lets school administrators use a platform to contact donators for instruments,
+ Setup a systematic way for students to receive lessons, and for students to form their own
+ student music groups.
+ Filename: index.html.erb
+ Description: Homepage for the application with a description and two logo pictures.
+ NOTE: This was originally part of of Ethan's open source work, but I edited all contents of the file.
+ Last modified on: 4-25-2020 %>
+
+<style>
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+body {
+  background-color: #F3B47D;
+}
+
+div {
+  text-align: center;
+}
+</style>
+
+
+<body>
+<h1>Welcome to MusicalStudentsGroup!</h1>
+
+<br>
+<br>
+<%-# main screen text and logo -%>
+<p>MusicalStudentsGroup is an application for students to be able to request instrument donations from students or community members who no longer need them, put up requests to form a music group, or offer up and request lessons on their particular instrument with the help of school administrators using the app.</p>
+
+<br>
+
+<div><%= image_tag("croppedtrump.jpeg", width: '400px') =%></div>
+
+<br>
+
+<p>Please login or create an account to continue.</p>
+</body>

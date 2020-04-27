@@ -1,21 +1,104 @@
+<%# Project name: MusicalStudentsGroup
+ Description: Lets school administrators use a platform to contact donators for instruments,
+ Setup a systematic way for students to receive lessons, and for students to form their own
+ student music groups.
+ Filename: application.html.erb
+ Description: Application wide html, like navigation bar and logo
+ NOTE: This was originally part of Ethan's open source file, however it has been edited by me to fit some of my needs.
+ Last modified on: 4-27-2020 %>
+
 <!DOCTYPE html>
+<style>
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+}
+
+.logo {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+</style>
 <html>
   <head>
-    <title>MusicalStudentsGroup</title>
+    <%# Bootstrap meta tags %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= "MusicalStudentsGroup" %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application' %>
+    <%# Bootstrap css %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   </head>
-
   <body>
-    <div class="navigation">
-      <p><%= link_to 'Home', pages_home_path %></p>
-      <p><%= link_to 'Donations', pages_instruments_path %></p>
-      <p><%= link_to 'Lessons', pages_lessons_path %></p>
-      <p><%= link_to 'Student Groups', pages_formaGroup_path %></p>
+    <%# Bootstrap js & dependencies %>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <%# Navigation Bar %>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <a><%= link_to 'MusicalStudentsGroup', home_index_path %></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a><%= link_to 'Donations', donations_path %></a>
+          </li>
+          <li class="nav-item">
+            <a><%= link_to 'Lessons', lessons_path %></a>
+          </li>
+          <li class="nav-item">
+            <a><%= link_to 'Form a Student Group', groups_path %></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <%# If user, show account, else sign in %>
+          <% if user_signed_in? %>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+                Account
+              </a>
+              <%# Change to rails "link_to" for the actual links when implementing %>
+              <%# Make sure to include the css class as shown in the login example %>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <%# The rails administration panel link %>
+                
+                <div class="dropdown-divider"></div>
+                <%# Devise requires that the logout command be sent using the 'delete' HTTP verb (method) %>
+                <%= link_to "Logout", destroy_user_session_path, class: "dropdown-item", method: :delete %>
+              </div>
+            </li>
+          <% else %>
+            <li class="nav-item">
+              <%= button_to "Login", new_user_session_path, class: "btn btn-outline-primary" %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+      <%= yield %>
     </div>
-    <%= yield %>
+    <div class="logo"><%= image_tag("croppedtrump.jpeg", width: '200px') =%></div>
+<br>
   </body>
 </html>

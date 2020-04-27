@@ -1,0 +1,71 @@
+<%# Project name: MusicalStudentsGroup
+ Description: Lets school administrators use a platform to contact donators for instruments,
+ Setup a systematic way for students to receive lessons, and for students to form their own
+ student music groups.
+ Filename: _form.html.erb
+ Description: Form field for making new / editing lesson listings
+ NOTE: This was originally part of of what was generated from the scaffold framework, 
+ but I made edits to the styling and functionality myself.
+ Last modified on: 4-27-2020 %>
+
+<style>
+div.actions {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+body {
+  background-color: #F3B47D;
+}
+</style>
+
+<body>
+<%= form_with(model: lesson, local: true) do |form| %>
+  <% if lesson.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(lesson.errors.count, "error") %> prohibited this lesson from being saved:</h2>
+
+      <ul>
+        <% lesson.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%-# list of all required fields -%>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, :required => 'required' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :'Years of Experience' %>
+    <%= form.number_field :experience, :required => 'required' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :instrument %>
+    <%= form.select :instrument, ['Flute', 'Oboe', 'Clarinet', 'Saxophone', 'Bassoon', 'Trumpet', 'Trombone', 'Euphonium', 'Tuba', 'Piano', 'Percussion', 'Viola', 'Violin', 'Cello', 'Bass', 'Guitar'], :required => 'required' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location, :required => 'required' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :availability %>
+    <%= form.text_field :availability, :required => 'required' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, :required => 'required' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+</body>

@@ -1,0 +1,31 @@
+<%# Project name: MusicalStudentsGroup
+ Description: Lets school administrators use a platform to contact donators for instruments,
+ Setup a systematic way for students to receive lessons, and for students to form their own
+ student music groups.
+ Filename: edit.html.erb
+ Description: Renders title, some styling and buttons for editing lesson listings page
+ NOTE: This was originally part of of what was generated from the scaffold framework, 
+ but I made edits to the styling and functionality myself.
+ Last modified on: 4-25-2020 %>
+
+<style>
+button {
+    display: block;
+    margin: auto;
+    text-align: center;   
+ 
+}
+
+body {
+  background-color: #F3B47D;
+}
+</style>
+
+<%-# form and back button and title rendered -%>
+<body>
+<h1>Editing Lesson</h1>
+
+<%= render 'form', lesson: @lesson %>
+<br>
+<button><%= link_to 'Back', lessons_path %></button>
+</body>
