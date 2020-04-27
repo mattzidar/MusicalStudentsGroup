@@ -1,6 +1,23 @@
-**Open Source Licensing**<br /><br />
-Communication about bugs, issues, future changes and features must be done through the issues tab. Discussion can be completed there and issues must be resolved as issues are fixed or conversation has ended. Any discussion or ideas can be listed in the issues tab as well.
+Copyright (c) 2020 MusicalStudentsGroup
+All rights reserved.
 
-In order to develop future functionality or fix bugs, please first refer to the installation guide in the README.md file or on the home page of this wiki. After installation and changes have been made to the code, make sure to commit the changes to the development branch in this Github repository. Make sure to follow the format of the coding style and code structure itself (model, view, controller). After changes have been made in the development branch, they will be reviewed to see if the changes should be merged with the files on the main branch.
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
 
-This license must be included in all versions and redistributions of the source code, whether it has been edited or not. 
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIEDi
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
