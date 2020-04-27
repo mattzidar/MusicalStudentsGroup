@@ -10,7 +10,7 @@ Installation and usage:
 Project was developed using a Windows machine with the web application running on a Google Chrome browser. Server is hosted on my TCNJ Virtual Machine running ruby 2.7.0 and rails 6.0.2.1.
 
 For running the application:
-Ensure that Ruby 2.7.0 and Rails 6.0.2.1 are installed on your system.
+Ensure that Ruby 2.7.0 and Rails 6.0.2.1 are installed on your system.<br />
 Clone the repository and run bundle install and yarn install.
 Install postgreSQL. installation is different depending on the type of machine.
 Next, create, migrate, and seed the database.
