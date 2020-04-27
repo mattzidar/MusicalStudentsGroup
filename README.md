@@ -1,13 +1,20 @@
 # MusicalStudentsGroup
-Note: Wiki requires that the repository be public or I upgrade and pay money, so I am putting my Wiki page here.
 
 Application for students in underprivileged music programs to receive instruments, get lessons, or form a music group such as a band, orchestra, or choir
 
 The intent with all of these functions is to make sure that students in school districts with a limited number of instruments can play an instrument on a regular basis. Additionally, lessons can serve as additional teaching for younger students, which will overall strengthen the performance of the program as a whole while providing older students with an opportunity to volunteer and give back. Students will be able to form musical groups based on their interests to expand their musical horizons by playing in groups that aren't offered in underfunded school districts such as a jazz combo or string quintet. This will also help them learn multiple styles of music.
 
-All code that I could add for the Ruby on Rails application is included in the src folder. Project proposal is in the docs folder and will include future documents that I create.
+All code that I could add for the Ruby on Rails application is included in the src folder. Project proposal is in the docs folder along with documentation and diagrams for my project.
 
-Began working on prototype for this submission on 3-26 as described in the issues tab. Working on functionality for one use case for this submission and will continue to develop them for the assignment 5 deadline.
+Installation and usage:
+Project was developed using a Windows machine with the web application running on a Google Chrome browser. Server is hosted on my TCNJ Virtual Machine running ruby 2.7.0 and rails 6.0.2.1.
+
+For running the application:
+Ensure that Ruby 2.7.0 and Rails 6.0.2.1 are installed on your system.
+Clone the repository and run bundle install and yarn install.
+Install postgreSQL. installation is different depending on the type of machine.
+Next, create, migrate, and seed the database.
+Afterwards, run the server using rails s --binding= with your ip address.
 
 Assignment 3 UML Diagrams:
 https://imgur.com/a/vXXDFYu
