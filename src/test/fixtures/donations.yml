@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  instrument: MyString
+  condition: MyString
+  model: MyString
+  location: MyString
+  email: MyString
+
+two:
+  name: MyString
+  instrument: MyString
+  condition: MyString
+  model: MyString
+  location: MyString
+  email: MyString

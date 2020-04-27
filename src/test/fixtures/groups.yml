@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  yearLevel: 1
+  peopleNeeded: 1
+  instrumentsNeeded: MyString
+  musicStyle: MyString
+  location: MyString
+  email: MyString
+
+two:
+  name: MyString
+  yearLevel: 1
+  peopleNeeded: 1
+  instrumentsNeeded: MyString
+  musicStyle: MyString
+  location: MyString
+  email: MyString
