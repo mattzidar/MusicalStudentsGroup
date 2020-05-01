@@ -4,8 +4,8 @@
 # student music groups.
 # Filename: groups_controller.rb
 # Description: Groups controller for functions
-# NOTE: This was generated from the scaffold framework
-# Last modified on: 4-25-2020
+# NOTE: This was generated from the scaffold framework and edited by me
+# Last modified on: 4-30-2020
 
 class GroupsController < ApplicationController
   before_action :set_group, only: [:show, :edit, :update, :destroy]
@@ -14,11 +14,11 @@ class GroupsController < ApplicationController
   #
   # Function: index()
   # Parameters: None
-  # Post-Condition: List all music groups
-  #
+  # Post-Condition: List all music groups, or a subset of groups if 
+  # a search is applied
   # -----------------------------------------------------------------
   def index
-    @groups = Group.all
+    @groups = Group.search_groups(params[:search])
   end
 
   def show

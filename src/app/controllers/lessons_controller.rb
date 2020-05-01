@@ -4,8 +4,8 @@
 # student music groups.
 # Filename: lessons_controller.rb
 # Description: Lessons controller for functions
-# NOTE: This was generated from the scaffold framework
-# Last modified on: 4-25-2020
+# NOTE: This was generated from the scaffold framework and edited by me
+# Last modified on: 4-30-2020
 
 class LessonsController < ApplicationController
   before_action :set_lesson, only: [:show, :edit, :update, :destroy]
@@ -14,11 +14,11 @@ class LessonsController < ApplicationController
   #
   # Function: index()
   # Parameters: None
-  # Post-Condition: List all lesson listings on page
-  #
+  # Post-Condition: List all lesson listings on page, or a subset
+  # if a search is applied
   # -----------------------------------------------------------------
   def index
-    @lessons = Lesson.all
+    @lessons = Lesson.search_lessons(params[:search])
   end
 
   
