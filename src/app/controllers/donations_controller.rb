@@ -4,8 +4,8 @@
 # student music groups.
 # Filename: donations_controller.rb
 # Description: Donations controller for functions
-# NOTE: This was generated from the scaffold framework
-# Last modified on: 4-25-2020
+# NOTE: This was generated from the scaffold framework and edited by me
+# Last modified on: 4-30-2020
 
 
 class DonationsController < ApplicationController
@@ -15,11 +15,11 @@ class DonationsController < ApplicationController
   #
   # Function: index()
   # Parameters: None
-  # Post-Condition: List all donations
-  #
+  # Post-Condition: List all donations, or a specific set of donations
+  # if a search is applied
   # -----------------------------------------------------------------
   def index
-    @donations = Donation.all
+    @donations = Donation.search_donations(params[:search])
   end
 
   def show
@@ -110,14 +110,6 @@ class DonationsController < ApplicationController
       format.json { head :no_content }
     end
   end
-
-  #def self.search(str)
-    #if str.blank?  
-      #all
-    #else
-      #wher)
-    #end
-  #end
 
   private
     # Use callbacks to share common setup or constraints between actions.
